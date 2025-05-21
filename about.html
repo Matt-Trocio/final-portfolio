@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Static Website</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>		
+<body>
+    <img class="bg-video" autoplay loop>
+        <source src="./BACKGROUND.gif" type="img/gif">
+        Your browser does not support the video tag.
+    </img>
+    <!-- Navbar -->
+     <div>
+
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="./LOGOM.png" alt="Logo" href="./index.html">
+                <div class="logo">Matthew Trocio</div>
+                
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Projects</a></li>
+                <li><a href="#contacttwo">Contacts</a></li>
+            </ul>
+        </nav>
+        <!-- about section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2>About Me:</h2>
+                <p>I'm a person who likes to dance and sing</p>
+            </div>
+            <div class="video-container">
+                <video id="myVideo" autoplay loop muted playsinline>
+                    <source src="./Dance.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button class="mute-btn" id="muteButton">🔊 Mute</button>
+         </div>
+            <div class="video-containertwo">
+                <video id="myVideo2" autoplay loop muted>
+                    <source src="./Sing.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <script>
+                const video = document.getElementById("myVideo");
+                const muteButton = document.getElementById("muteButton");
+        
+                muteButton.addEventListener("click", () => {
+                    if (video.muted) {
+                        video.muted = false;
+                        muteButton.textContent = "🔊 Mute";
+                    } else {
+                        video.muted = true;
+                        muteButton.textContent = "🔇 Unmute";
+                    }
+                });
+            </script>
+            <div class="about-more">
+                <h2>More about me</h2>
+                <p>I have always had a deep passion for performing, especially singing and dancing. From a young age, I found joy in expressing myself through music and movement, whether it was singing along to my favorite songs, learning new dance routines or making own. Over the years, I have honed my skills through practice, performances, and training with the support of my parents. Allowing me to grow as an confident performer. Whether on stage or in everyday life, singing and dancing have become an essential part of who I am, fueling my creativity and confidence.</p>
+            </div>
+        </section>
+         <!-- Contact Section -->
+         <section id="contacttwo">
+
+            <h4><a href="mailto:matthew.trocio@gmail.com" target="_blank">Contact Me</a></h4>
+            <p>Reach me out for more info.</p>
+
+          </section>
+ </div>
+          
+</body>
+</html>

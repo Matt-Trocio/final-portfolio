@@ -1,0 +1,120 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Static Website</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>		
+<body>
+    <img class="bg-video" autoplay loop>
+        <source src="./BACKGROUND.gif" type="img/gif">
+        Your browser does not support the video tag.
+    </img>
+    <!-- Navbar -->
+     <div>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="./LOGOM.png" alt="Logo" href="./index.html">
+                <div class="logo">Matthew Trocio</div>
+                
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#contactthree">Contacts</a></li>
+            </ul>
+        </nav>
+        <!-- projects section -->
+         <section id="projects" class="projects-section">
+            <div id="web" class="projects-container">
+            <h2>Web Development</h2>
+            <p> As a team, we provide a web-game application where we spend our ideas and knowledge together! </p>
+            </div>
+            <div class="video-containerthree">
+                <video id="myVideo3" autoplay loop muted>
+                    <source src="./Game.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button class="mute-btn2" id="muteButton2">🔊 Mute</button>
+            </div>
+            <script>
+                const video1 = document.getElementById("myVideo3");
+                const muteButton1 = document.getElementById("muteButton2");
+        
+                muteButton1.addEventListener("click", () => {
+                    if (video1.muted) {
+                        video1.muted = false;
+                        muteButton1.textContent = "🔊 Mute";
+                    } else {
+                        video1.muted = true;
+                        muteButton1.textContent = "🔇 Unmute";
+                    }
+                });
+            </script>
+        
+         <div class="projects-more">
+            <h3>Astral Legends</h3>
+            <p> A space shooter game developed by 8 students from BSCOE-12A1. It was developed with four programming language. HTML for structure, CSS for design, Javascript for functionalities, and PHP for the database. It is also heavily inspired by Space invaders, an iconic video game that was released back in 1978 for arcades. Astral Legends aims to rekindle that retro thrill with a modern twist!</p>
+         </div>
+
+         <div id="photo" class="projects-container2">
+            <h2>Photo Editing</h2>
+            <p>Currently leveling up my photo editing game—one layer at a time.</p>
+        </div>
+        <div class="video-containerfour">
+                <video id="myVideo4" autoplay loop muted>
+                    <source src="./Editpictures.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+         <div class="projects-more2">
+            <h3>Polishing My Photo Editing Skills</h3>
+            <p>Pixels are my playground, and every edit is an experiment that I like to do. Most of these samples of my edits are school-related which includes some product package, film poster and other pictures that helps my curiousity to generate some new ideas to learn.  </p>
+         </div>
+        <div id="music" class="projects-container3">
+            <h2>Music Editing</h2>
+            <p>My process involves shaping spontaneous audio elements into polished, intentional melody.</p>
+        </div>
+        <div class="video-containerfive">
+                <video id="myVideo5" autoplay loop muted>
+                    <source src="./MusicEdit.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button class="mute-btn3" id="muteButton3">🔊 Mute</button>
+            </div>
+
+            <script>
+                const video2 = document.getElementById("myVideo5");
+                const muteButton2 = document.getElementById("muteButton3");
+        
+                muteButton2.addEventListener("click", () => {
+                    if (video2.muted) {
+                        video2.muted = false;
+                        muteButton2.textContent = "🔊 Mute";
+                    } else {
+                        video2.muted = true;
+                        muteButton2.textContent = "🔇 Unmute";
+                    }
+                });
+            </script>
+        <div class="projects-more3">
+            <h3>Raw sound into melody</h3>
+            <p>This is one of my works that really pushes me to do music editing even more. This Video was my music cover from Michael Jackson's "Dangerous" with the use of random materials in household. </p>
+         </div>
+        </section>
+          <!-- Contact Section -->
+         <section id="contactthree">
+
+            <h4><a href="mailto:matthew.trocio@gmail.com" target="_blank">Contact Me</a></h4>
+            <p>Reach me out for more info.</p>
+     </section>
+    </div>
+
+        
+ 
+
+</body>
+</html>
